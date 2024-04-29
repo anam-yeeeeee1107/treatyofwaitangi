@@ -1,0 +1,46 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "header header header"
+                         "nav main main"
+                         "sidebar footer footer";
+    text-align: center;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#header {
+    grid-area: header;
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#main {
+    grid-area: main;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+h1 {
+    color: limegreen;
+    margin-bottom: 2px;
+}
+
+h2 {
+    color: green;
+    margin-top: 2px;
+}
+
+body {
+    background-color: beige;
+}
